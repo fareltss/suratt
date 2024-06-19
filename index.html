@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Iyaa,</strong>
+                        <p>
+                            i want to say sorry to you because I haven't been able to be the best for you, but every day I try to be better again and again. Thank you for being patient with me like this. I will treat you better from now on, I promise. I hope that after reading this letter, your mood will be better. Ada bonus meng lagi temenin kamu nap tuu :), love you so much ♡︎
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <div class="cat-container">
+            <div class="shadow"></div>
+            <div class="cat">
+                <div class="ear"></div>
+                <div class="eye"></div>
+                <div class="mouth"></div>
+                <div class="nose"></div>
+                <div class="tail"></div>
+                <div class="body"></div>
+                <div class="bubble"></div>
+            </div>
+        </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
